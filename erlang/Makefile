@@ -4,4 +4,4 @@ OBJS = client.beam plists.beam server.beam server2.beam
 all : $(OBJS)
 
 %.beam : %.erl
-	erlc $<
+	erlc +native $<
